@@ -1,1 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weather Dashboard</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="Weather.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Weather</h1>
+      <p class="subtitle">Get real-time weather updates for any location</p>
+    </header>
+    
+    <div class="search-container">
+      <div class="search-box">
+        <input type="text" id="city-input" placeholder="Enter a city name...">
+      </div>
+      <button id="search-btn">Search</button>
+      <button id="location-btn"><i class="fas fa-location-arrow"></i></button>
+    </div>
+    
+    <!-- Added the missing weather dashboard div -->
+    <div id="weather-dashboard">
+      <div class="welcome-message">
+        <i class="fas fa-cloud-sun"></i>
+        <h2>Welcome to Weather Dashboard</h2>
+        <p>Search for a city or use your current location to get started</p>
+      </div>
+      
+      <div class="location-permission">
+        <p><i class="fas fa-info-circle"></i> Allow location access to see weather for your current location</p>
+      </div>
+    </div>
+    
+    <footer>
+      <p>Powered by OpenWeatherMap</p>
+    </footer>
+  </div>
 
+  <script src="Weather.js"></script>
+</body>
+</html>
