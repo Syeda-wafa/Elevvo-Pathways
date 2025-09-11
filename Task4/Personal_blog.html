@@ -1,1 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Personal Blog</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="Personal_blog.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">Blog<span>Verse</span></div>
+                <nav>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#categories">Categories</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
 
+    <!-- Home Section -->
+    <section id="home" class="main-content">
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="container">
+                <div class="hero-content">
+                    <h1>Discover Stories and Ideas</h1>
+                    <p>Welcome to my personal blog where I share my thoughts, experiences, and insights on various topics that inspire me.</p>
+                    <a href="#categories" class="btn">Explore Articles</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Main Content -->
+        <main class="container">
+            <!-- Categories Section -->
+            <section id="categories">
+                <!-- Filters Section -->
+                <section class="filters">
+                    <div class="search-box">
+                        <input type="text" id="search-input" placeholder="Search for posts...">
+                        <button id="search-btn"><i class="fas fa-search"></i></button>
+                    </div>
+                    
+                    <div class="category-filters">
+                        <button class="category-btn active" data-category="all">All Posts</button>
+                        <button class="category-btn" data-category="tech">Tech</button>
+                        <button class="category-btn" data-category="travel">Travel</button>
+                        <button class="category-btn" data-category="food">Food</button>
+                        <button class="category-btn" data-category="lifestyle">Lifestyle</button>
+                    </div>
+                </section>
+
+                <!-- Blog Posts Grid -->
+                <section class="posts-grid" id="posts-container">
+                    <!-- Posts will be dynamically inserted here -->
+                </section>
+
+                <!-- Pagination -->
+                <div class="pagination" id="pagination">
+                    <!-- Pagination buttons will be dynamically inserted here -->
+                </div>
+            </section>
+        </main>
+
+        <!-- Newsletter Section -->
+        <section class="newsletter">
+            <div class="container">
+                <h2>Subscribe to My Newsletter</h2>
+                <p>Stay updated with my latest articles, tips, and insights delivered directly to your inbox.</p>
+                <form class="newsletter-form">
+                    <input type="email" placeholder="Your email address">
+                    <button type="submit">Subscribe</button>
+                </form>
+            </div>
+        </section>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about-section">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-image">
+                    <img src="https://i.pinimg.com/1200x/f4/80/28/f480287ac9349fd1b1bc4fab99147f63.jpg" alt="About Me">
+                </div>
+                <div class="about-text">
+                    <h2>About Me</h2>
+                    <p>Hello! I'm Jane, a passionate blogger and digital enthusiast with a love for sharing stories and insights from my experiences. My journey started five years ago when I decided to document my travels, and it has since evolved into a platform where I explore various topics close to my heart.</p>
+                    <p>Through BlogVerse, I aim to create a community of like-minded individuals who appreciate authentic stories and valuable information. Whether it's technology, travel, food, or lifestyle, I believe every topic has a story worth telling.</p>
+                    <p>When I'm not writing, you can find me exploring new coffee shops, hiking trails, or experimenting with new recipes in my kitchen. I'm always open to collaborations and new ideas, so feel free to reach out!</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <div class="contact-container">
+                <div class="contact-info">
+                    <h2>Get In Touch</h2>
+                    <p>Have a question, suggestion, or just want to say hello? I'd love to hear from you! Fill out the form or use the contact details below.</p>
+                    <ul class="contact-details">
+                        <li><i class="fas fa-envelope"></i> hello@blogverse.com</li>
+                        <li><i class="fas fa-phone"></i> +1 (555) 123-4567</li>
+                        <li><i class="fas fa-map-marker-alt"></i> Islamabad, Pakistan</li>
+                    </ul>
+                </div>
+                <div class="contact-form">
+                    <form>
+                        <input type="text" placeholder="Your Name" required>
+                        <input type="email" placeholder="Your Email" required>
+                        <input type="text" placeholder="Subject">
+                        <textarea placeholder="Your Message" required></textarea>
+                        <button type="submit">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h3>About BlogVerse</h3>
+                    <p>A personal blog where I share my thoughts and experiences on technology, travel, food, and lifestyle.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-pinterest"></i></a>
+                    </div>
+                </div>
+                <div class="footer-column">
+                    <h3>Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#categories">Categories</a></li>
+                        <li><a href="#about">About Me</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Popular Categories</h3>
+                    <ul class="footer-links">
+                        <li><a href="#categories" data-category="tech">Technology</a></li>
+                        <li><a href="#categories" data-category="travel">Travel Destinations</a></li>
+                        <li><a href="#categories" data-category="food">Food Recipes</a></li>
+                        <li><a href="#categories" data-category="lifestyle">Lifestyle</a></li>
+                        <li><a href="#categories">Productivity</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2023 BlogVerse. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="Personal_blog.js"></script>
+</body>
+</html>
